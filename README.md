@@ -5,27 +5,60 @@ Mini-Shell simulates basic shell behavior and helps understand core Operating Sy
 ---
 
 ## Features ✨ 
+### Parsing 🔍
+✔️ Command parsing and tokenization  
+✔️ Detection of operators:
+- pipes `|`
+- redirection `>` `<`
+- background execution `&`
+
+---
+
+### Execution & Error Handling ⚙️ 
 ✔️ Command execution using `fork()` & `exec()`  
-✔️ Built-in commands:
-- `cd` 
-- `pwd`
-- `exit`
-- `history`
+✔️ Process creation and management (Foreground & Background)
+✔️ Redirection & Pipes execution
+✔️ Error handling:
+- invalid commands  
+- fork/exec failures  
+- file/directory errors  
 
-✔️ Input / Output Redirection:
-- `>` 📤 (output to file)  
-- `<` 📥 (input from file)  
+---
 
-✔️ Pipes support:
-- `|` 🔗 (connect commands together)  
+### Built-in Commands 🛠️ 
+✔️ Internal shell commands (no exec required):
+- `cd` 📂  
+- `pwd` 📍  
+- `exit` 🚪  
+- `history` 🧠  
 
-✔️ Background execution:
-- `&` ⚡ (run processes in background)  
+---
 
-✔️ Signal handling:
-- `Ctrl + C` 🛑 (terminate foreground process only)
+### Signal Handling 📡 
+✔️ Handle system signals:
+- `Ctrl + C` (SIGINT)  → terminates foreground process only  
+- `Ctrl + Z` (SIGTSTP) → temporary pause
+- Prevents shell from exiting  
 
-✔️ Basic error handling 🚨
+---
+
+### Input / Output Redirection 📤📥
+✔️ Redirect input/output streams:
+- `>` → write output to file  
+- `<` → read input from file  
+
+---
+
+### Pipes 🔗 
+✔️ Command chaining using pipes:
+- `|` connects output of one process to input of another  
+
+---
+
+### Background Execution ⚡
+✔️ Run processes in background using:
+- `&`  
+✔️ Shell continues accepting new commands
 
 ---
 
