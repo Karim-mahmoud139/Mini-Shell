@@ -95,7 +95,7 @@ make
 ## Team Members 👥
 Mustafa Younis (Team Leader)<br>
 Youssef Mohammed<br>
-Lmiaa<br>
+Lamia<br>
 Manar<br>
 Maram Ahmed<br>
 Seif<br>
